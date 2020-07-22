@@ -11,7 +11,8 @@
       var data = this.response;
       console.log(data);
     };
- 　　request.onreadystatechange = someHandler;
+    request.withCredentials = true; // CORS
+    
     request.send();
   </script>
   </head>
